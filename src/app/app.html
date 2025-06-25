@@ -1,0 +1,32 @@
+ 
+<style>
+  .map {
+    width: 100%;
+    position: relative;
+    .esriSimpleSliderTL {
+      top: 16px;
+      left: unset;
+      right: 16px;
+      bottom: unset;
+      border: unset;
+      padding: 5px 0;
+      .esriSimpleSliderIncrementButton,
+      .esriSimpleSliderDecrementButton {
+        border: unset;
+        width: 36px;
+        span {
+          font-weight: 600;
+          color: #000000;
+        }
+      }
+    }
+  }
+</style>
+
+<main>
+   <div #mapView id="map" class="map">
+  </div>
+   <button class="mat-elevation-z" matTooltip="Draw" (click)="onDrawNew()" type="button" mat-button color="primary">
+      <h4>Draw</h4>
+    </button>
+</main>
